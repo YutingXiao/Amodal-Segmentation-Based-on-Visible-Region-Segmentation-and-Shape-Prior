@@ -1,0 +1,9 @@
+_BASE_: "../Base-ORCNN-FPN_COCOA_cls.yaml"
+MODEL:
+  MASK_ON: True
+  RESNETS:
+    DEPTH: 50
+TEST:
+  EVAL_AMODAL_TYPE: "AMODAL_VISIBLE"
+OUTPUT:
+  TRAIN_VERSION: 'orcnn_amodal_cocoa_cls_res50_SGD_1x'

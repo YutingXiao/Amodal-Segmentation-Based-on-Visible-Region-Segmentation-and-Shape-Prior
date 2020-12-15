@@ -1,0 +1,8 @@
+_BASE_: "../Base-RCNN-FPN-KINS.yaml"
+MODEL:
+  WEIGHTS: "detectron2://ImageNetPretrained/MSRA/R-50.pkl"
+  MASK_ON: True
+  RESNETS:
+    DEPTH: 101
+OUTPUT:
+  TRAIN_VERSION: 'mask_rcnn_amodal_kins_res50_SGD_1x_2'

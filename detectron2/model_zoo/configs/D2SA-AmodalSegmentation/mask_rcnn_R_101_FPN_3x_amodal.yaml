@@ -1,0 +1,13 @@
+_BASE_: "../Base-RCNN-FPN-D2SA.yaml"
+MODEL:
+  WEIGHTS: "detectron2://ImageNetPretrained/MSRA/R-50.pkl"
+  MASK_ON: True
+  RESNETS:
+    DEPTH: 101
+SOLVER:
+  IMS_PER_BATCH: 2
+  BASE_LR: 0.0025
+  STEPS: (180000, 210000)
+  MAX_ITER: 240000
+OUTPUT:
+  TRAIN_VERSION: 'mask_rcnn_amodal_d2sa_res101_3x'

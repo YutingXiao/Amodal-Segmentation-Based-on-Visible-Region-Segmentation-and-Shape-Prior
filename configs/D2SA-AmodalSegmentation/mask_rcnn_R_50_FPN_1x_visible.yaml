@@ -1,0 +1,12 @@
+_BASE_: "../Base-RCNN-FPN-D2SA.yaml"
+MODEL:
+  MASK_ON: True
+  RESNETS:
+    DEPTH: 50
+#  ROI_MASK_HEAD:
+#    NUM_CONV: 8
+DATASETS:
+  TRAIN: ("d2sa_train_aug_visible","d2sa_train_visible")
+  TEST: ("d2sa_val_visible",)
+OUTPUT:
+  TRAIN_VERSION: 'mask_rcnn_visible_d2sa_res50_SGD_1x'

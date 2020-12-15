@@ -1,0 +1,12 @@
+_BASE_: "../Base-RCNN-FPN-KINS.yaml"
+MODEL:
+  MASK_ON: True
+  RESNETS:
+    DEPTH: 50
+  ROI_MASK_HEAD:
+    NUM_CONV: 8
+DATASETS:
+  TRAIN: ("kins_train_visible",)
+  TEST: ("kins_val_visible",)
+OUTPUT:
+  TRAIN_VERSION: 'mask_rcnn_c8_visible_kins_res50_SGD_1x'

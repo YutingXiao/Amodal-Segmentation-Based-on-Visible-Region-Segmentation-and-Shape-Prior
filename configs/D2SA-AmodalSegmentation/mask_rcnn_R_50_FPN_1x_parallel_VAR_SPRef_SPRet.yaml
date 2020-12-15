@@ -1,0 +1,34 @@
+_BASE_: "../Base-RCNN-FPN-D2SA.yaml"
+MODEL:
+#  WEIGHTS: "/p300/workspace/detectron2/mask_rcnn_parallel_cf21_cosfm34_AErecon_d2sa_res50_SGD_1x_v3/model_final.pth"
+  MASK_ON: True
+  RESNETS:
+    DEPTH: 50
+  ROI_HEADS:
+    NAME: "Parallel_Amodal_Visible_ROIHeads"
+  ROI_MASK_HEAD:
+    NAME: "Parallel_Amodal_Visible_Head"
+    VERSION: 1
+    RECLS_NET:
+      NAME: "ReclsConvFCHead"
+      MODE: "adaptive"
+      PROG_CONSTRAINT: False
+      BOX_THS: 0.8
+      MASK_THS: 0.5
+      GT_WEIGHT: 0.1
+      RESCORING: True
+    RECON_NET:
+      NAME: "General_Recon_Net"
+      NORM: ""
+      BOX_THS: 0.8
+      MASK_THS: 0.95
+      NUM_CONV: 3
+      ALPHA: 2.0
+      RESCORING: True
+      MEMORY_REFINE: True
+      MEMORY_REFINE_K: 16
+
+TEST:
+  EVAL_AMODAL_TYPE: "AMODAL_VISIBLE"
+OUTPUT:
+  TRAIN_VERSION: 'mask_rcnn_parallel_VAR_SPRef_SPRet_d2sa_res50_SGD_1x'

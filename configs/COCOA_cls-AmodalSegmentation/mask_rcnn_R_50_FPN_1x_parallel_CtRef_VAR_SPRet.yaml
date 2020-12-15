@@ -1,0 +1,32 @@
+_BASE_: "../Base-RCNN-FPN-COCOA_cls.yaml"
+MODEL:
+  MASK_ON: True
+  RESNETS:
+    DEPTH: 50
+  ROI_HEADS:
+    NAME: "Parallel_Amodal_Visible_ROIHeads"
+  ROI_MASK_HEAD:
+    NAME: "Parallel_Amodal_Visible_Head"
+    VERSION: 3
+    GT_AMODAL_WEIGHT: 1.0
+    GT_VISIBLE_WEIGHT: 1.0
+    RECLS_NET:
+      NAME: "ReclsConvFCHead"
+      MODE: "adaptive"
+      GT_WEIGHT: 0.1
+      RESCORING: True
+    RECON_NET:
+      NAME: "General_Recon_Net"
+      NORM: ""
+      BOX_THS: 0.8
+      MASK_THS: 0.95
+      NUM_CONV: 3
+      MEMO_AUG: True
+      ALPHA: 2.0
+      KMEANS: 128
+      RESCORING: True
+
+TEST:
+  EVAL_AMODAL_TYPE: "AMODAL_VISIBLE"
+OUTPUT:
+  TRAIN_VERSION: 'mask_rcnn_parallel_CtRef_VAR_SPRetc3_cocoacls_res50_SGD_1x'

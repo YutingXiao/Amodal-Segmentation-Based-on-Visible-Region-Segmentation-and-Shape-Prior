@@ -1,0 +1,11 @@
+_BASE_: "../Base-RCNN-FPN-COCOA_cls.yaml"
+MODEL:
+  MASK_ON: True
+  RESNETS:
+    DEPTH: 50
+  ROI_MASK_HEAD:
+    NUM_CONV: 12
+#TEST:
+#  EVAL_PERIOD: 1000
+OUTPUT:
+  TRAIN_VERSION: 'mask_rcnn_c12_amodal_cocoa_cls_res50_SGD_1x'

@@ -1,0 +1,12 @@
+_BASE_: "../Base-RCNN-FPN-D2SA.yaml"
+MODEL:
+  MASK_ON: True
+  RESNETS:
+    DEPTH: 50
+#  ROI_MASK_HEAD:
+#    NUM_CONV: 8
+SOLVER:
+  IMS_PER_BATCH: 3
+  BASE_LR: 0.01
+OUTPUT:
+  TRAIN_VERSION: 'mask_rcnn_amodal_d2sa_res50_SGD_1x'

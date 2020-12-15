@@ -1,0 +1,15 @@
+_BASE_: "../Base-RCNN-FPN-COCOA_cls.yaml"
+MODEL:
+  MASK_ON: True
+  RESNETS:
+    DEPTH: 50
+  ROI_MASK_HEAD:
+    NUM_CONV: 8
+#SOLVER:
+#  STEPS: (1700, 2000)
+#  MAX_ITER: 2500
+DATASETS:
+  TRAIN: ("cocoa_cls_train_visible",)
+  TEST: ("cocoa_cls_val_visible",)
+OUTPUT:
+  TRAIN_VERSION: 'mask_rcnn_c8_visible_cocoa_cls_res50_SGD_1x'

@@ -1,0 +1,24 @@
+_BASE_: "../Base-RCNN-FPN-D2SA.yaml"
+MODEL:
+  MASK_ON: True
+  RESNETS:
+    DEPTH: 50
+  ROI_HEADS:
+    NAME: "Parallel_Amodal_Visible_ROIHeads"
+  ROI_MASK_HEAD:
+    NAME: "Parallel_Amodal_Visible_Head"
+    VERSION: 3
+    ATTENTION_MODE: "attention"
+    RECLS_NET:
+      NAME: "ReclsConvFCHead"
+      MODE: "adaptive"
+      PROG_CONSTRAINT: False
+      BOX_THS: 0.8
+      MASK_THS: 0.5
+      GT_WEIGHT: 0.2
+      RESCORING: True
+
+TEST:
+  EVAL_AMODAL_TYPE: "AMODAL_VISIBLE"
+OUTPUT:
+  TRAIN_VERSION: 'mask_rcnn_parallel_CtRef_VAR_d2sa_res50_SGD_1x'

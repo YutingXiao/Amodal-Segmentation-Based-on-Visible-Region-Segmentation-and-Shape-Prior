@@ -1,0 +1,21 @@
+_BASE_: "../Base-RCNN-FPN-D2SA.yaml"
+MODEL:
+  WEIGHTS: "detectron2://ImageNetPretrained/MSRA/R-50.pkl"
+  MASK_ON: True
+  RESNETS:
+    DEPTH: 50
+  ROI_HEADS:
+    NAME: "Amodal_VisibleROIHeads"
+  ROI_MASK_HEAD:
+    NAME: "Amodal_Visible_Head"
+    NUM_CONV: 4
+    POOLER_RESOLUTION: 14
+TEST:
+  EVAL_AMODAL_TYPE: "AMODAL_VISIBLE"
+SOLVER:
+  IMS_PER_BATCH: 2
+  BASE_LR: 0.0025
+  STEPS: (60000, 80000)
+  MAX_ITER: 90000
+OUTPUT:
+  TRAIN_VERSION: 'mask_rcnn_amodal28_visible28_d2sa_res50_1x'
