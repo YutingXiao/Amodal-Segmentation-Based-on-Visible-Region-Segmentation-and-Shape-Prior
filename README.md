@@ -50,19 +50,19 @@ Learn more at [documentation](https://detectron2.readthedocs.org).
 ## Download Resource
 ### D2SA dataset
 D2S Amodal dataset is at [mvtec-d2sa](https://www.mvtec.com/company/research/datasets/mvtec-d2s/).
-Download [Images](ftp://guest:GU.205dldo@ftp.softronics.ch/mvtec_d2s/amodal/d2s_amodal_images_v1.tar.xz) and
-[Amodal Annotations](ftp://guest:GU.205dldo@ftp.softronics.ch/mvtec_d2s/amodal/d2s_amodal_annotations_v1.tar.xz)
+Images: ftp://guest:GU.205dldo@ftp.softronics.ch/mvtec_d2s/amodal/d2s_amodal_images_v1.tar.xz
+Amodal Annotations: ftp://guest:GU.205dldo@ftp.softronics.ch/mvtec_d2s/amodal/d2s_amodal_annotations_v1.tar.xz
 
 ### KINS dataset
-The KINS dataset is built based on KITTI dataset. 
-
 Download the [Images](http://www.cvlibs.net/download.php?file=data_object_image_2.zip)
 from [KITTI dataset](http://www.cvlibs.net/datasets/kitti/eval_object.php?obj_benchmark=2d). 
+
 The [Amodal Annotations](https://drive.google.com/drive/folders/1FuXz1Rrv5rrGG4n7KcQHVWKvSyr3Tkyo?usp=sharing)
 could be found at [KINS dataset](https://github.com/qqlu/Amodal-Instance-Segmentation-through-KINS-Dataset)
 
 ### COCOA dataset
-The COCOA dataset annotation is at ftp://guest:GU.205dldo@ftp.softronics.ch/cocoa/COCOA_annotations_detectron.tar.xz.
+The COCOA dataset annotation: ftp://guest:GU.205dldo@ftp.softronics.ch/cocoa/COCOA_annotations_detectron.tar.xz.
+
 The images of COCOA dataset is the train2014 and val2014 of [COCO dataset](http://cocodataset.org/).
 The [COCO API (pycocotools)](https://github.com/cocodataset/cocoapi) is used for COCO format data.
 
