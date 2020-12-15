@@ -49,8 +49,10 @@ Learn more at [documentation](https://detectron2.readthedocs.org).
 
 ## Download Resource
 ### D2SA dataset
-D2S Amodal dataset is at [mvtec-d2sa](https://www.mvtec.com/company/research/datasets/mvtec-d2s/).
+The information of D2S Amodal could be found at [mvtec-d2sa](https://www.mvtec.com/company/research/datasets/mvtec-d2s/).
+
 Images: ftp://guest:GU.205dldo@ftp.softronics.ch/mvtec_d2s/amodal/d2s_amodal_images_v1.tar.xz
+
 Amodal Annotations: ftp://guest:GU.205dldo@ftp.softronics.ch/mvtec_d2s/amodal/d2s_amodal_annotations_v1.tar.xz
 
 ### KINS dataset
