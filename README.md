@@ -1,5 +1,5 @@
 # Amodal Segmentation Based on Visible Region Segmentation and Shape Prior
-<img src="./teaser2.jpg" width="800" height="250" >
+<img src="./teaser2.jpg" width="850" height="250" >
 
 This is the PyTorch preview version implementation of our AAAI 2021 paper:
 
