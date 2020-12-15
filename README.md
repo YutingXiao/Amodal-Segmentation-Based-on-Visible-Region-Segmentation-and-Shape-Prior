@@ -128,3 +128,15 @@ If you want to eval your saved checkpoints:
 python tools/train_net.py --config-file configs/{your_yaml_file} 
 --eval-only MODEL.WEIGHTS {your_OUTPUT_DIR}/model_final.pth'
 ```
+
+##Citation
+If you find the code useful in your research, please consider citing the paper. Thanks！
+
+```
+@InProceedings{yuting2021amodal,
+author = {Yuting Xiao, Yanyu Xu, Ziming Zhong, Weixin Luo, Jiawei Li and Shenghua Gao},
+title = {Amodal Segmentation Based on Visible Region Segmentation and Shape Prior},
+booktitle = {AAAI Conference on Artificial Intelligence},
+year = {2021}
+}
+```
