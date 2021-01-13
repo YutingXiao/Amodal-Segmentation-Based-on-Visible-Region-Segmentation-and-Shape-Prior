@@ -1,5 +1,5 @@
 # Amodal Segmentation Based on Visible Region Segmentation and Shape Prior
-<img src="./teaser2.jpg" width="850" height="250" >
+<img src="teaser2.jpg" width="850" height="250" >
 
 This is the PyTorch preview version implementation of our AAAI 2021 paper:
 
@@ -49,11 +49,7 @@ Learn more at [documentation](https://detectron2.readthedocs.org).
 
 ## Download Resource
 ### D2SA dataset
-The information of D2S Amodal could be found at [mvtec-d2sa](https://www.mvtec.com/company/research/datasets/mvtec-d2s/).
-
-Images: ftp://guest:GU.205dldo@ftp.softronics.ch/mvtec_d2s/amodal/d2s_amodal_images_v1.tar.xz
-
-Amodal Annotations: ftp://guest:GU.205dldo@ftp.softronics.ch/mvtec_d2s/amodal/d2s_amodal_annotations_v1.tar.xz
+The D2S Amodal dataset could be found at [mvtec-d2sa](https://www.mvtec.com/company/research/datasets/mvtec-d2s/).
 
 ### KINS dataset
 Download the [Images](http://www.cvlibs.net/download.php?file=data_object_image_2.zip)
