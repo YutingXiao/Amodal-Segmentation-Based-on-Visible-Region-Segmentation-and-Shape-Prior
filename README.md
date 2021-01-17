@@ -32,13 +32,15 @@ Install COCO API:
 ```
 pip install git+https://github.com/philferriere/cocoapi.git#subdirectory=PythonAPI
 ```
+
+## Metrics
 In our paper, we provide the mAP(Occluded) to evaluate the performance on occluded object (occlusion
 rate > 0.15). If you want to compute this metrics, you should use the cocoeval.py in
 detectron2/data/amodal_datasets/pycocotools. Besides, this metrics can only be appiled on methods
 predicting both amodal and visible mask.
 
 The evaluator outputs tasks: amodal_segm(coarse), amodal2_segm(refined), visible_segm(coarse), 
-visible_segm(refined), bbox. The amodal2_segm corresponds to the results in the paper.
+visible2_segm(refined), bbox. The amodal2_segm corresponds to the results in the paper.
 
 ## About Detectron2
 If you want to know more information about how to use Detectron2 framework, 
