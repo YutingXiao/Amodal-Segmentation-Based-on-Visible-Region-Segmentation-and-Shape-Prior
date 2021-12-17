@@ -3,7 +3,7 @@
 
 This is the PyTorch preview version implementation of our AAAI 2021 paper:
 
-"Amodal Segmentation Based on Visible Region Segmentation and Shape Prior".
+"Amodal Segmentation Based on Visible Region Segmentation and Shape Prior" (VRSP-Net).
 
 It is based on the Detectron2.
 Detectron2 is Facebook AI Research's next generation software system.
