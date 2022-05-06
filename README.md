@@ -61,7 +61,7 @@ The [Amodal Annotations](https://drive.google.com/drive/folders/1FuXz1Rrv5rrGG4n
 could be found at [KINS dataset](https://github.com/qqlu/Amodal-Instance-Segmentation-through-KINS-Dataset)
 
 ### COCOA dataset
-The COCOA dataset annotation: ftp://guest:GU.205dldo@ftp.softronics.ch/cocoa/COCOA_annotations_detectron.tar.xz.
+The COCOA dataset annotation: ftp://guest:GU.205dldo@ftp.softronics.ch/cocoa/COCOA_annotations_detectron.tar.xz
 
 The images of COCOA dataset is the train2014 and val2014 of [COCO dataset](http://cocodataset.org/).
 The [COCO API (pycocotools)](https://github.com/cocodataset/cocoapi) is used for COCO format data.
